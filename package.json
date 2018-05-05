@@ -4,11 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "emulator:start": "functions start",
+    "emulator:stop": "functions stop",
+    "emulator:status": "functions status",
+    "emulator:deploy": "functions deploy http --trigger-http",
+    "emulator:delete": "functions delete http",
+    "emulator:call": "functions call http",
+    "emulator:logs": "functions logs read",
+    "emulator:help": "functions --help"
   },
   "author": "serverless.com",
   "license": "MIT",
   "dependencies": {
+    "@google-cloud/functions-emulator": "^1.0.0-beta.4",
     "serverless-google-cloudfunctions": "^1.1.0"
   }
 }
